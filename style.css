@@ -1,0 +1,109 @@
+/* .all-tab-img img {
+  padding-bottom: 20px;
+}
+.all-tab-img img:nth-last-child(2) {
+  padding-bottom:0;
+} */
+.ourwork-tab-wrap{
+  padding: 50px 0px;
+  position: relative;
+}
+.ourwork-tab-wrap .nav-tabs {
+  display:none;
+  border-bottom: none;
+}
+.ourwork-tab-wrap .nav-tabs .nav-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+    color: #0037a1;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .4s ease-in-out;
+}
+.ourwork-tab-wrap .nav-tabs .nav-link{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color:  #0037a1;
+    text-transform: uppercase;
+    padding: 0 10px 0 40px;
+}
+.ourwork-tab-wrap .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background:  #002F8A;
+  color: #fff;
+}
+.tabs__wrap {
+  background: #fff;
+  border: 2px solid #2c2d36;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  min-height: 322px;
+  position: relative;
+  width: 100%;
+}
+
+.ourwork-tab-wrap .tab-content {
+  width: 50%;
+}
+@media(min-width:576px) {
+  .ourwork-tab-wrap .nav-tabs {
+      display: flex;
+     flex-direction: column;
+     width: 50%;
+  }
+
+  .ourwork-tab-wrap .card {
+      border: none;
+  }
+
+  .ourwork-tab-wrap .card .card-header {
+      display:none;
+  }
+
+  .ourwork-tab-wrap .card .collapse{
+      display:block;
+  }
+}
+
+@media(max-width:575px){
+  .ourwork-tab-wrap .tab-content > .tab-pane {
+      display: block !important;
+      opacity: 1;
+      margin-bottom: 10px;
+  }
+
+  .ourwork-tab-wrap .card-header {
+      background: #427fad;
+      color: #fff;
+      border-bottom: 1px solid rgba(0,0,0,.125);
+  }
+  .ourwork-tab-wrap .card-header h5 a{
+      background: #427fad;
+      color: #fff;
+      border-bottom: none;
+      text-decoration: none;
+      font-size: 16px;
+      display: block;
+  }
+  .ourwork-tab-wrap .card-header h5 a i {
+      float: right;
+      padding-top: 5px;
+  }
+  .ourwork-tab-wrap .card-body {
+      border: 1px solid #427fad;
+  }
+  .ourwork-tab-wrap .card-header h5 a:hover {
+      color: #fff;
+  }
+
+}
